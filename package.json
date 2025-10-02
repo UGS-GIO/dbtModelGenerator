@@ -1,0 +1,19 @@
+{
+  "name": "dbt-model-generator",
+  "version": "1.0.0",
+  "description": "Cloud Function to generate dbt models after data ingestion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^7.7.0",
+    "@google-cloud/secret-manager": "^5.0.0",
+    "pg": "^8.11.3",
+    "js-yaml": "^4.1.0",
+    "@google-cloud/pubsub": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
