@@ -127,6 +127,10 @@ class MetadataAwareGenerator {
                             description: 'Internal publication ID extracted from table name'
                         },
                         {
+                            name: '_quad_name',
+                            description: 'Quadrangle name for spatial datasets (may be null for non-spatial data)'
+                        },
+                        {
                             name: '_publication_date',
                             description: 'Business publication date for proper chronological ordering'
                         },
@@ -213,6 +217,7 @@ class MetadataAwareGenerator {
                     -- Pass through lineage fields from the unified view.
                     raw._schema_version,
                     raw._publication_id,
+                    raw._quad_name,
                     raw._publication_date,
                     raw._load_date,
                     raw._source_table,
@@ -279,6 +284,7 @@ class MetadataAwareGenerator {
                     review_status,
                     _schema_version,
                     _publication_id,
+                    _quad_name,
                     _publication_date,
                     _load_date,
                     _source_table,
